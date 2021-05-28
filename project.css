@@ -1,7 +1,8 @@
-h1{
+.tl{
     color:whitesmoke;
     background-color: rgb(241, 117, 95);
     text-align: center;
+    height: 70px;
 }
 
 .container-1 {
@@ -39,17 +40,21 @@ h1{
 }
 
 button{
-  background-color: rgb(241, 117, 95);
-  border: none;
-  color: white;
-  padding: 8px 210px;
-  text-decoration: none;
-  margin: 30px 10px;
+
+  border: 2px solid rgb(241, 117, 95);
+  background-color: white;
+  color: rgb(241, 117, 95);
+  padding: 5px 190px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 30px;
+
   
 }
 
 button:hover{
-    background-color: rgb(252, 79, 49);
+    background-color: rgb(241, 117, 95);
+    color: white;
 }
 .text-line-r1, .text-line-r2{
     color: black;
@@ -80,3 +85,19 @@ button:hover{
         border-bottom: solid rgba(192, 6, 6, 0.822) 2px;
 
 }
+
+.button {
+    border: 2px solid rgb(241, 117, 95);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 150%;
+    width:40px;
+    height:40px;
+
+    
+  } 
