@@ -28,7 +28,7 @@ function addNewRow() {
 
     select1.name = 'grade';
     select1.classList.add("text-line3");
-    select1.style = "margin-left: 21%;"
+    select1.style = "margin-left: 22%;"
     // select1.setAttribute("onchange", "function()");
     option1.innerHTML = '--';
     option2.innerHTML = 'A';
@@ -56,12 +56,37 @@ function addNewRow() {
 
     entry_bar.appendChild(new_div);
 
+}
+
+function result(){
+    const input2 = document.querySelectorAll('.text-line2');
+    const result1 = document.querySelector(".text-line-r1");
+    let data = [];
+
+    var i,sum=0;
+    for(i = 0; i < input2.length; i++){
+
+        var x = input2[i].value;
+        if(x!=''){
+
+            var y = parseInt(x);
+            sum+=y;
+            data.push(y);
+        }
+        else{
+            data.push(0);
+        }
+    }
+    result1.value = sum;
 
 
 
 }
 
+function gradePoint(grade){
 
+
+}
 
 
 
