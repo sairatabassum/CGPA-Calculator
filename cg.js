@@ -1,5 +1,5 @@
 function addNewRow() {
-    
+
 
     const entry_bar = document.getElementById("ow");
 
@@ -25,7 +25,7 @@ function addNewRow() {
     input1.style = "margin-left: 5%;"
     input2.style = "width:100px; margin-left: 15%;"
 
-    input1.classList.add('text-line1'); 
+    input1.classList.add('text-line1');
 
     input2.classList.add('text-line2');
 
@@ -67,22 +67,22 @@ function addNewRow() {
 
 }
 
-function result(){
+function result() {
     const input2 = document.querySelectorAll('.text-line2');
     const result1 = document.querySelector(".text-line-r1");
     let data = [];
 
-    var i,sum=0;
-    for(i = 0; i < input2.length; i++){
+    var i, sum = 0;
+    for (i = 0; i < input2.length; i++) {
 
         var x = input2[i].value;
-        if(x!=''){
+        if (x != '') {
 
             var y = parseInt(x);
-            sum+=y;
+            sum += y;
             data.push(y);
         }
-        else{
+        else {
             data.push(0);
         }
     }
@@ -93,9 +93,47 @@ function result(){
 }
 
 
-function gradePoint(Grade){
+function gradePoint(grade) {
+
+    if (grade == 'A+') {
+
+        return 4.00;
+    }
+    else if (grade == 'A') {
+        return 3.75;
+    }
+    else if (grade == 'A-') {
+        return 3.50;
+
+    }
+    else if (grade == 'B+') {
+        return 3.25;
+
+    }
+    else if (grade == 'B') {
+        return 3.00;
+
+    }
+    else if (grade == 'B-') {
+        return 2.75;
+
+    }
+    else if (grade == 'C+') {
+        return 2.50;
+
+    }
+    else if (grade == 'C') {
+        return 2.25;
+
+    }
+    else if (grade == 'D') {
+        return 2.00;
+
+    }
+    else if (grade == 'F') {
+        return 0.00;
+
+    }
 
 
-
-    
 }
