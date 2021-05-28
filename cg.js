@@ -16,6 +16,9 @@ function addNewRow() {
     const option7 = document.createElement('option');
     const option8 = document.createElement('option');
     const option9 = document.createElement('option');
+    const option10 = document.createElement('option');
+    const option11 = document.createElement('option');
+
 
     input1.type = "text";
     input2.type = "number";
@@ -31,14 +34,17 @@ function addNewRow() {
     select1.style = "margin-left: 22%;"
     // select1.setAttribute("onchange", "function()");
     option1.innerHTML = '--';
-    option2.innerHTML = 'A';
-    option3.innerHTML = 'A-';
-    option4.innerHTML = 'B';
+    option2.innerHTML = 'A+';
+    option3.innerHTML = 'A';
+    option4.innerHTML = 'A-';
     option5.innerHTML = 'B+';
-    option6.innerHTML = 'C+';
-    option7.innerHTML = 'C';
-    option8.innerHTML = 'D';
-    option9.innerHTML = 'F';
+    option6.innerHTML = 'B';
+    option7.innerHTML = 'B-';
+    option8.innerHTML = 'C+';
+    option9.innerHTML = 'C';
+    option10.innerHTML = 'D';
+    option11.innerHTML = 'F';
+
 
     select1.appendChild(option1);
     select1.appendChild(option2);
@@ -49,6 +55,9 @@ function addNewRow() {
     select1.appendChild(option7);
     select1.appendChild(option8);
     select1.appendChild(option9);
+    select1.appendChild(option10);
+    select1.appendChild(option11);
+
 
     new_div.appendChild(input1);
     new_div.appendChild(input2);
@@ -83,18 +92,10 @@ function result(){
 
 }
 
-function gradePoint(grade){
+
+function gradePoint(Grade){
 
 
+
+    
 }
-
-
-
-
-
-
-
-
-
-
-
