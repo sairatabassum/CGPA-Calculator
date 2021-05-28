@@ -6,9 +6,8 @@
 }
 
 .container-1 {
-    height: 400px;
     width: 700px;
-    overflow: hidden;
+    overflow: initial;
     position: relative;
     box-shadow: 5px 10px 20px rgb(204, 203, 203);
     float: left;
@@ -68,7 +67,7 @@ button:hover{
 }
 
 
-.text-line{
+.text-line1 , .text-line2, .text-line3{
     color: black;
     outline: none;
     outline-style: none;
@@ -81,7 +80,7 @@ button:hover{
 
 }
 
-.text-line:hover, .text-line-r1:hover, .text-line-r2:hover{
+.text-line1:hover, .text-line2:hover , .text-line3:hover, .text-line-r1:hover, .text-line-r2:hover{
         border-bottom: solid rgba(192, 6, 6, 0.822) 2px;
 
 }

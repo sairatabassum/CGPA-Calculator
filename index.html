@@ -11,16 +11,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
   <link rel="stylesheet" href="project.css">
-  <title>Weather App</title>
+  <title>CGPA Calculator</title>
 </head>
 
 <body>
-
-
   <div>
     <div class="tl">
       <h1>CGPA Calculator</h1>
     </div>
+
+
     <div class="container-1">
       <h3 class="title1">Course Details
         <hr>
@@ -32,12 +32,12 @@
         <h4 style="float: left; font-size: 20px; margin-left: 25%;">Grade</h4>
       </div>
 
-      <div>
+      <div id="ow" >
         <div>
-          <input type="text" style="margin-left: 5%;" class="text-line">
-          <input type="number" style="width:100px; margin-left: 15%;" class="text-line">
+          <input type="text" style="margin-left: 5%;" class="text-line1">
+          <input type="number" style="width:100px; margin-left: 15%;" class="text-line2">
 
-          <select style="margin-left: 21%;" name="grade" id="grade" class="text-line">
+          <select style="margin-left: 21%;" name="grade" class="text-line3" >
             <option valuedisabled selected="selected" class="">--</option>
             <option label="A" value="A">A</option>
             <option label="A-" value="A-">A</option>
@@ -52,10 +52,10 @@
         </div>
 
         <div>
-          <input type="text" style="margin-left: 5%;" class="text-line">
-          <input type="number" style="width:100px; margin-left: 15%;" class="text-line">
+          <input type="text" style="margin-left: 5%;" class="text-line1">
+          <input type="number" style="width:100px; margin-left: 15%;" class="text-line2">
 
-          <select style="margin-left: 21%;" name="grade" id="grade" class="text-line">
+          <select style="margin-left: 21%;" name="grade" class="text-line3" >
             <option valuedisabled selected="selected" class="">--</option>
             <option label="A" value="A">A</option>
             <option label="A-" value="A-">A</option>
@@ -70,10 +70,10 @@
         </div>
 
         <div>
-          <input type="text" style="margin-left: 5%;" class="text-line">
-          <input type="number" style="width:100px; margin-left: 15%;" class="text-line">
+          <input type="text" style="margin-left: 5%;" class="text-line1">
+          <input type="number" style="width:100px; margin-left: 15%;" class="text-line2">
 
-          <select style="margin-left: 21%;" name="grade" id="grade" class="text-line">
+          <select style="margin-left: 21%;" name="grade" class="text-line3" >
             <option valuedisabled selected="selected" class="">--</option>
             <option label="A" value="A">A</option>
             <option label="A-" value="A-">A</option>
@@ -88,10 +88,10 @@
         </div>
 
         <div>
-          <input type="text" style="margin-left: 5%;" class="text-line">
-          <input type="number" style="width:100px; margin-left: 15%;" class="text-line">
+          <input type="text" style="margin-left: 5%;" class="text-line1">
+          <input type="number" style="width:100px; margin-left: 15%;" class="text-line2">
 
-          <select style="margin-left: 21%;" name="grade" id="grade" class="text-line">
+          <select style="margin-left: 21%;" name="grade" class="text-line3" >
             <option valuedisabled selected="selected" class="">--</option>
             <option label="A" value="A">A</option>
             <option label="A-" value="A-">A</option>
@@ -104,28 +104,30 @@
 
           </select>
         </div>
-        <button style="margin-left: 46%; margin-top: 8%;" class="button button1">
-          <p style="font-size: 30px; margin-top: -40%;">+</p>
 
+        
+        </div>
+        <button style="margin-left: 46%; margin-top: 9%;" class="button button1" onclick="addNewRow()">
+          <p style="font-size: 30px; margin-top: -33%;">+</p>
         </button>
-
       </div>
 
-
+      
     </div>
 
+    
     <div class="container-2" style="float: right;">
       <h3 class="title2">Result
         <hr>
       </h3>
 
       <div class="hd2">
-        <h4 style="float: left; margin-left: 10%;">Total Credit</h4>
+        <h4 style="float: left; margin-left: 5%;">Total Credit</h4>
         <h4 style="float: left; margin-left: 35%;">CGPA</h4>
 
       </div>
       <div>
-        <input type="text" style="margin-left: 7%;" class="text-line-r1">
+        <input type="text" style="margin-left: 5%;" class="text-line-r1">
         <input type="text" style="margin-left: 18%;" class="text-line-r2">
 
       </div>
@@ -135,6 +137,7 @@
 
 
   </div>
+  <script src="cg.js"></script>
 
 </body>
 
