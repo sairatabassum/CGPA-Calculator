@@ -110,7 +110,7 @@ function result() {
     for (i = 0; i < input2.length; i++) {
 
         total_result += ( data1[i] * data2[i]);
-        alert(total_result);
+        // alert(total_result);
 
     }
 
