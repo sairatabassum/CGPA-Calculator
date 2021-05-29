@@ -106,7 +106,7 @@ function result() {
 
     }
     
-    var total_result = 0, cgpa;
+    var total_result = 0, cgpa,CGPA;
     for (i = 0; i < input2.length; i++) {
 
         total_result += ( data1[i] * data2[i]);
@@ -115,7 +115,8 @@ function result() {
     }
 
     cgpa = total_result / sum ;
-    result2 . value = cgpa;
+    CGPA = cgpa.toFixed(2);
+    result2 . value = CGPA;
 
 
 
