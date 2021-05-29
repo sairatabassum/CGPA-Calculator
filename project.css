@@ -102,6 +102,17 @@ button:hover{
   } 
 
   @media screen and (max-width: 1304px) {
+    .yu{
+        margin: 0;
+        place-content: center;
+        
+    }
+    .container-2{
+        position: absolute;
+        left: 200px; 
+        bottom: 200px;
+    }
+    
     
   }
 
