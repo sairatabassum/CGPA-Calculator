@@ -1,4 +1,4 @@
-# CGPA-Calculator
+# CGPA Calculator
 
 **CGPA Calculator to calculate semester wise CGPA**
 
