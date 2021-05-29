@@ -69,7 +69,8 @@ function addNewRow() {
 
 function result() {
     const input2 = document.querySelectorAll('.text-line2');
-    const result1 = document.querySelector(".text-line-r1");
+    const result1 = document.querySelector('.text-line-r1');
+    const result2 =  document.querySelector('.text-line-r2')
     const input3 = document.querySelectorAll('.text-line3')
     let data1 = [];
 
@@ -104,10 +105,18 @@ function result() {
         }
 
     }
-
+    
+    var total_result = 0, cgpa;
     for (i = 0; i < input2.length; i++) {
-        alert(data1[i] + ' ' + data2[i]);
+
+        total_result += ( data1[i] * data2[i]);
+        alert(total_result);
+
     }
+
+    cgpa = total_result / sum ;
+    result2 . value = cgpa;
+
 
 
 }
