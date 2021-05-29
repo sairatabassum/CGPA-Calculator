@@ -94,12 +94,19 @@ function result() {
 
         var z;
         z = input3[i].options[input3[i].selectedIndex].text;
-        data2.push(z);
-        
+
+        if (z == '--') {
+            data2.push(0.0);
+        }
+        else {
+             var flt = gradePoint(z);
+             data2.push(flt);
+        }
+
     }
 
-    for(i=0;i<input2.length;i++){
-        alert(data1[i]+' '+data2[i]);
+    for (i = 0; i < input2.length; i++) {
+        alert(data1[i] + ' ' + data2[i]);
     }
 
 
