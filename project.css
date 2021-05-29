@@ -102,11 +102,12 @@ button:hover{
   } 
 
   @media screen and (max-width: 1304px) {
-    .tl{
-        color:whitesmoke;
-        background-color: rgb(241, 117, 95);
-        text-align: center;
-        height: 70px;
-        width: 749px;
-    }
+    
+  }
+
+  @media screen and (max-width: 756px) {
+      .tl{
+          width: 756px;
+      }
+
   }
