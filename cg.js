@@ -70,7 +70,8 @@ function addNewRow() {
 function result() {
     const input2 = document.querySelectorAll('.text-line2');
     const result1 = document.querySelector(".text-line-r1");
-    let data = [];
+    const input3 = document.querySelectorAll('.text-line3')
+    let data1 = [];
 
     var i, sum = 0;
     for (i = 0; i < input2.length; i++) {
@@ -80,14 +81,26 @@ function result() {
 
             var y = parseInt(x);
             sum += y;
-            data.push(y);
+            data1.push(y);
         }
         else {
-            data.push(0);
+            data1.push(0);
         }
     }
     result1.value = sum;
+    let data2 = [];
 
+    for (i = 0; i < input3.length; i++) {
+
+        var z;
+        z = input3[i].options[input3[i].selectedIndex].text;
+        data2.push(z);
+        
+    }
+
+    for(i=0;i<input2.length;i++){
+        alert(data1[i]+' '+data2[i]);
+    }
 
 
 }
