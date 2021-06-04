@@ -70,7 +70,7 @@ function addNewRow() {
 function result() {
     const input2 = document.querySelectorAll('.text-line2');
     const result1 = document.querySelector('.text-line-r1');
-    const result2 =  document.querySelector('.text-line-r2')
+    const result2 = document.querySelector('.text-line-r2')
     const input3 = document.querySelectorAll('.text-line3')
     let data1 = [];
 
@@ -100,23 +100,25 @@ function result() {
             data2.push(0.0);
         }
         else {
-             var flt = gradePoint(z);
-             data2.push(flt);
+            var flt = gradePoint(z);
+            data2.push(flt);
         }
 
     }
-    
-    var total_result = 0, cgpa,CGPA;
+
+    var total_result = 0, cgpa, CGPA;
     for (i = 0; i < input2.length; i++) {
 
-        total_result += ( data1[i] * data2[i]);
+        total_result += (data1[i] * data2[i]);
         // alert(total_result);
 
     }
 
-    cgpa = total_result / sum ;
+    cgpa = total_result / sum;
     CGPA = cgpa.toFixed(2);
-    result2 . value = CGPA;
+    if (CGPA == 'NaN') { result2.value = 0.00 }
+    else { result2.value = CGPA; }
+
 
 
 
